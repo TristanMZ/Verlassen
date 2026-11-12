@@ -1,0 +1,88 @@
+{
+  "player_spawn": {"x": 64, "y": 576},
+  "npcs": [
+    {
+      "id": "mother",
+      "type": "npc",
+      "name": "Mother",
+      "pos": [960, 192],
+      "facing_angle": 180,
+      "patrol_path": [[960, 192], [864, 192], [960, 256], [960, 192]],
+      "patrol_wait": 2.5,
+      "fov_degrees": 90,
+      "vision_range": 180,
+      "dialogue_key": "mother_ambient",
+      "placeholder_color": [220, 140, 60]
+    },
+    {
+      "id": "father",
+      "type": "npc",
+      "name": "Father",
+      "pos": [256, 384],
+      "facing_angle": 90,
+      "patrol_path": [[256, 384]],
+      "patrol_wait": 999,
+      "fov_degrees": 60,
+      "vision_range": 100,
+      "dialogue_key": "father_ambient",
+      "placeholder_color": [180, 100, 40]
+    }
+  ],
+  "interactables": [
+    {
+      "id": "bathroom_hide",
+      "type": "hiding_spot",
+      "pos": [96, 96],
+      "label": "Hide in bathroom",
+      "data": {}
+    },
+    {
+      "id": "front_keypad",
+      "type": "keypad",
+      "pos": [1152, 96],
+      "label": "Keypad lock",
+      "data": {
+        "code": "1947",
+        "clue_key": "keypad_clue",
+        "hint": "A year. Something on the wall."
+      }
+    },
+    {
+      "id": "calendar_note",
+      "type": "note",
+      "pos": [800, 128],
+      "label": "Wall calendar",
+      "data": {
+        "text": "The year grandma moved in. 1947. We used it for everything.",
+        "flag_set": "saw_calendar"
+      }
+    },
+    {
+      "id": "debt_envelope",
+      "type": "note",
+      "pos": [480, 352],
+      "label": "Envelope on table",
+      "data": {
+        "text": "PAST DUE — THIRD NOTICE. Amount: $4,200. Borrower: R. Calloway.",
+        "flag_set": "saw_debt_envelope",
+        "narration_trigger": "debt_envelope_reaction"
+      }
+    },
+    {
+      "id": "savings_bag",
+      "type": "item",
+      "pos": [96, 544],
+      "label": "Your savings bag",
+      "data": {
+        "savings_add": 340,
+        "narration_trigger": "pick_up_savings",
+        "one_shot": true
+      }
+    }
+  ],
+  "light_sources": [
+    {"pos": [256, 400], "radius": 80, "color": [255, 180, 80], "intensity": 0.4, "flicker": true},
+    {"pos": [960, 192], "radius": 60, "color": [255, 220, 150], "intensity": 0.6, "flicker": false},
+    {"pos": [1152, 96], "radius": 40, "color": [80, 160, 255], "intensity": 0.8, "flicker": false}
+  ]
+}

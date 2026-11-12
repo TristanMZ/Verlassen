@@ -1,0 +1,48 @@
+{
+  "trigger_zones": [
+    {
+      "id": "hallway_enter",
+      "rect": [320, 288, 128, 192],
+      "one_shot": true,
+      "actions": [
+        {"type": "narration", "key": "hallway_first"},
+        {"type": "audio_tension", "value": 0.3}
+      ]
+    },
+    {
+      "id": "near_father",
+      "rect": [160, 320, 192, 160],
+      "one_shot": false,
+      "actions": [
+        {"type": "audio_tension", "value": 0.5}
+      ]
+    },
+    {
+      "id": "escape_timer_start",
+      "rect": [1024, 32, 256, 128],
+      "one_shot": true,
+      "actions": [
+        {"type": "timer_start", "name": "escape_clock", "duration": 30.0},
+        {"type": "narration", "key": "timer_start_narration"},
+        {"type": "audio_tension", "value": 0.9}
+      ]
+    },
+    {
+      "id": "level_exit",
+      "rect": [1120, 32, 64, 96],
+      "one_shot": true,
+      "requires_flag": "keypad_front_solved",
+      "actions": [
+        {"type": "level_complete", "next_level": "cutscene_01"}
+      ]
+    }
+  ],
+  "on_alert": [
+    {"type": "audio_tension", "value": 0.8},
+    {"type": "narration", "key": "on_alert"}
+  ],
+  "on_caught": [
+    {"type": "scene_transition", "scene": "game_over"},
+    {"type": "save_flag", "flag": "caught_in_house", "value": true}
+  ]
+}

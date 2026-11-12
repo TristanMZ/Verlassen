@@ -1,0 +1,50 @@
+{
+  "intro": {
+    "text": "Tonight. It has to be tonight. I've been waiting too long already.",
+    "duration": 4.5
+  },
+  "hallway_first": {
+    "text": "Thin walls. I used to hear everything through them. Good.",
+    "duration": 4.0
+  },
+  "near_father": {
+    "text": "He's always here. Even now, in the middle of the night.",
+    "duration": 3.5
+  },
+  "debt_envelope_reaction": {
+    "text": "R. Calloway. That's my name. That's my name on that.",
+    "duration": 4.5
+  },
+  "pick_up_savings": {
+    "text": "Three forty. Every dollar I didn't spend in two years.",
+    "duration": 4.0
+  },
+  "keypad_clue": {
+    "text": "There's a code on this. I know this house. Think.",
+    "duration": 3.5
+  },
+  "timer_start_narration": {
+    "text": "The bus leaves at two. I have thirty seconds to clear this door.",
+    "duration": 4.0
+  },
+  "on_alert": {
+    "text": "They heard something. Don't move.",
+    "duration": 3.0
+  },
+  "caught_narration": {
+    "text": "Not like this.",
+    "duration": 2.0
+  },
+  "mother_ambient": {
+    "text": "She's still up. She's always still up.",
+    "duration": 3.5
+  },
+  "father_ambient": {
+    "text": "Asleep in the same chair. Same as always.",
+    "duration": 3.5
+  },
+  "level_complete": {
+    "text": "Outside. Just get outside.",
+    "duration": 3.0
+  }
+}

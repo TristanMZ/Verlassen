@@ -1,0 +1,17 @@
+{
+  "_comment": "All story flags. Set true as player progresses. Easy to audit here.",
+  "saw_calendar": false,
+  "saw_debt_envelope": false,
+  "keypad_front_solved": false,
+  "caught_in_house": false,
+  "level_01_complete": false,
+  "saw_debt_papers_level3": false,
+  "mother_revealed": false,
+  "father_revealed": false,
+  "casey_revealed": false,
+  "truth_level_complete": false,
+  "ending_chosen": "",
+  "ending_walk_away": false,
+  "ending_confront": false,
+  "ending_forgive": false
+}

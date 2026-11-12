@@ -1,0 +1,25 @@
+{
+  "endings": [
+    {
+      "id": "walk_away",
+      "title": "Walk Away",
+      "description": "Ren takes his savings and leaves without looking back. He never contacts them again.",
+      "implemented": true,
+      "flag": "ending_walk_away"
+    },
+    {
+      "id": "confront",
+      "title": "Confront",
+      "description": "Ren goes back and forces them to face what they did. It doesn't fix anything.",
+      "implemented": false,
+      "flag": "ending_confront"
+    },
+    {
+      "id": "forgive",
+      "title": "Forgive",
+      "description": "Ren sends a letter later. He understands. He still leaves.",
+      "implemented": false,
+      "flag": "ending_forgive"
+    }
+  ]
+}

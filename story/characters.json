@@ -1,0 +1,37 @@
+{
+  "protagonist": {
+    "name": "Ren Calloway",
+    "age": 23,
+    "savings": 340,
+    "constant": "PLAYER_NAME"
+  },
+  "betrayers": [
+    {
+      "id": "mother",
+      "name": "TBD",
+      "relation": "mother",
+      "act": "signed_debt_in_rens_name",
+      "revealed_in_level": 3,
+      "motive": "Desperate. The family owed more than they could pay. Ren's name was clean.",
+      "npc_id": "mother"
+    },
+    {
+      "id": "father",
+      "name": "TBD",
+      "relation": "father",
+      "act": "sold_information_to_creditors",
+      "revealed_in_level": 5,
+      "motive": "They came to him first. He thought it would protect the rest of the family.",
+      "npc_id": "father"
+    },
+    {
+      "id": "casey",
+      "name": "Casey",
+      "relation": "younger_sister",
+      "act": "skimmed_rens_savings",
+      "revealed_in_level": 5,
+      "motive": "She knew where he hid it. She told herself she'd pay it back.",
+      "npc_id": null
+    }
+  ]
+}
